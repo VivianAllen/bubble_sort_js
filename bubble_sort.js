@@ -1,4 +1,4 @@
-function bubbleSort(ary, order) {
+function bubbleSort(ary, order='asc') {
 
     function comp(x, y, order) {
         if (order=='asc') {
