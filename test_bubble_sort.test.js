@@ -47,3 +47,20 @@ test("Test bubbleSort cannot be sorted, descending", () => {
     received = bubbleSort(input, 'desc');
     expect(received).toEqual(expected);
 });
+
+
+test("Test bubbleSort ascending sort, long", () => {
+    input = [9, 5, 6, 3, 8, 0, 7, 1, 4, 2];
+    expected = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
+    received = bubbleSort(input, 'asc');
+    console.log(received)
+    expect(received).toEqual(expected);
+});
+
+
+test("Test bubbleSort descending sort, long", () => {
+    input = [9, 5, 6, 3, 8, 0, 7, 1, 4, 2];
+    expected = [9, 8, 7, 6, 5, 4, 3, 2, 1, 0];
+    received = bubbleSort(input, 'desc');
+    expect(received).toEqual(expected);
+});

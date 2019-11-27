@@ -8,7 +8,7 @@ function bubbleSort(ary, order) {
         };
     };
 
-    for (i=0; i < ary.length; i++) {
+    for (i=ary.length; i > 0; i--) {
         for (j=0; j <= i; j++) {
             if (comp(ary[j], ary[j+1], order)) {
                 [ary[j], ary[j+1]]  = [ary[j+1], ary[j]];
