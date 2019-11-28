@@ -1,10 +1,10 @@
 function bubbleSort(ary, order='asc') {
 
     function comp(x, y, order) {
-        if (order=='asc') {
-            return x > y;
-        } else {
+        if (order=='desc') {
             return x < y;
+        } else {
+            return x > y;
         };
     };
 
